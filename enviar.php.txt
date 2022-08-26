@@ -1,0 +1,15 @@
+<?php
+$nombre=$_POST['nombre'];
+$email=$_POST['gmail'];
+$asunto=$_POST['asunto'];
+$para='Maria@ipfmhn.com';
+$titulo='mensaje de un alumno del IPFM';
+
+if($_POST['submite']){
+	if (mail($para,$titulo)){
+		echo "mensaje enviado,muchas gracias.";
+	}
+	else{
+}		echo"fallo el envio";
+}
+?>
